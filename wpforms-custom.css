@@ -1,0 +1,44 @@
+/* CSS base per customizzare WP Forms */
+
+<style>
+/* Dimensioni font generali */
+.wpforms-field-label {
+font-size: 20px;
+}
+.ca-classe-custom .wpforms-field-label-inline {
+font-size: 18px;
+}
+.wpforms-container .wpforms-image-choices-modern label {
+font-size: 14px;
+}
+.ca-classe-custom-bottone {
+font-size: 22px;
+}
+/* Soluzione errore campo testo che copre i precedenti e campo testo mobile */
+#inserire-ID {
+margin-top: 50px;
+}
+/* Errore padding left del checkbox dati personali */
+#inserire-ID {
+padding-left: 0;
+}
+/* Dimensione immagini scelta checkbox */
+.wpforms-image-choices-image {
+max-width: 120px;
+margin: auto;
+}
+/* Larghezza piena campi stretti su mobile, campi immagini servizi e errore campo di testo */
+@media screen and (max-width: 640px) {
+.wpforms-container .wpforms-one-third {
+width: 100%;
+margin-left: 0;
+}
+#inserire-ID {
+display: contents;
+}
+.wpforms-image-choices-item {
+width: 100%;
+text-align: center;
+}
+}
+</style>
