@@ -5,3 +5,15 @@ body > a.iubenda-tp-btn.iubenda-cs-preferences-link {
 
 /* link preferenze cookie iubenda */
 <a class="iubenda-cs-preferences-link" href="#">Preferenze cookie</a>
+
+
+/* CartFlows soluzioni errori checkout */
+
+/* Risolve errore bordo in form di checkout */
+.ct-order-review {
+border: none;
+}
+/* Risolve errore checkbox in sezione riepilogo pagamento */
+.wcf-embed-checkout-form .woocommerce #payment input[type="checkbox"]:checked::before {
+display: contents;
+}
