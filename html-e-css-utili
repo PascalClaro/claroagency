@@ -1,0 +1,7 @@
+/* nascondere logo iubenda */
+body > a.iubenda-tp-btn.iubenda-cs-preferences-link {
+	display: none !important;
+}
+
+/* link preferenze cookie iubenda */
+<a class="iubenda-cs-preferences-link" href="#">Preferenze cookie</a>
