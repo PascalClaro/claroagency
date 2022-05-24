@@ -1,4 +1,4 @@
-/* CSS base per customizzare WP Forms */
+/******** CSS WPFORMS VERSIONE 1 *******/
 
 <style>
 /* Dimensioni font generali */
@@ -40,5 +40,63 @@ display: contents;
 width: 100%;
 text-align: center;
 }
+}
+</style>
+
+/******** CSS WPFORMS VERSIONE 2 *******/
+
+<style>
+
+/*** Correzione errori generici ***/
+
+/* Correzione errore campi non cliccabili */
+.ca-wpforms-style.wpforms-container .wpforms-field {
+position: inherit;
+}
+/* Correzione padding checkbox e radio richiesti */
+.ca-wpforms-style .wpforms-field-gdpr-checkbox .wpforms-field-required {
+padding: 0;
+}
+/* Correzione errore overflow textarea su telefono */
+@media only screen and (max-width: 600px) {
+.wpforms-container .wpforms-field:not(.wpforms-field-phone):not(.wpforms-field-select-style-modern) {
+overflow-x: inherit;
+}
+}
+/* Responsive larghezza intera mobile per campi tre quarti o metà su Desktop */
+@media only screen and (max-width: 700px) {
+.ca-wpforms-style .wpforms-one-third {
+width: 100%;
+margin-left: 0;
+}
+}
+
+/*** Stile grafico personalizzato ***/
+
+/* Bordo sottolineato input principali */
+.ca-wpforms-style .wpforms-field input {
+border: none;
+border-bottom: solid 1px var(--paletteColor1) !important;
+border-radius: 0;
+}
+/* Bordo standard negli altri input input principali */
+.ca-wpforms-style .wpforms-field-radio ul li input, .ca-wpforms-style .wpforms-field ul li input {
+	border: solid 1px var(--paletteColor3) !important;
+}
+/* Textarea */
+.ca-wpforms-style .wpforms-field-textarea textarea {
+	border-radius: 0;
+	border-color: var(--paletteColor1);
+}
+/* Checkbox */
+.ca-wpforms-style .wpforms-field.wpforms-field-gdpr-checkbox, .ca-wpforms-style .wpforms-field.wpforms-field-checkbox {
+	background: var(--paletteColor6);
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* Radio */
+.ca-wpforms-style .wpforms-field-radio .wpforms-field-label {
+	display: inline-block !important;
 }
 </style>
