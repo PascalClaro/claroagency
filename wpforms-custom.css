@@ -70,6 +70,16 @@ width: 100%;
 margin-left: 0;
 }
 }
+/* Messa in evidenza errori */
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+display: inline-block;
+background: red;
+color: #ffffff !important;
+padding: 5px !important;
+border-radius: 3px;
+font-weight: 500;
+margin-top: 10px !important;
+}
 
 /*** Stile grafico personalizzato ***/
 
